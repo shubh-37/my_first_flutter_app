@@ -1,4 +1,3 @@
-import "package:first_app/styled_text.dart";
 import "package:flutter/material.dart";
 
 class GradientContainer extends StatelessWidget {
@@ -14,7 +13,12 @@ class GradientContainer extends StatelessWidget {
         gradient: LinearGradient(
             colors: colors, begin: startAlignment, end: endAlignment),
       ),
-      child: const Center(child: StyledText("Learning Flutter")),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-6.png',
+          width: 200,
+        ),
+      ),
     );
   }
 }
